@@ -230,12 +230,15 @@ if($auth) {
             </a>
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
-                    <li><a style="pointer-events:none;"><samp><?php echo gethostname(); ?></samp></a></li>
+                    <!--<li><a style="pointer-events:none;"><samp><?php echo gethostname(); ?></samp></a></li>-->
+                    <li><a style="pointer-events:none;"><samp>RaspberryPi - PiHole</samp></a></li>
                     <li class="dropdown user user-menu">
+                        <!--
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                             <img src="img/logo.svg" class="user-image" style="border-radius: initial" sizes="160x160" alt="Pi-hole logo" />
                             <span class="hidden-xs">Pi-hole</span>
                         </a>
+                        -->
                         <ul class="dropdown-menu" style="right:0">
                             <!-- User image -->
                             <li class="user-header">
@@ -324,7 +327,7 @@ if($auth) {
                                 }
                                 else
                                 {
-                                    echo "#3366FF";
+                                    echo "#7FFF00";
                                 }
                                 echo "\"></i> Temp:&nbsp;";
                                 if($temperatureunit === "F")
@@ -567,19 +570,22 @@ if($auth) {
                 </li>
                 <?php } ?>
                 <!-- Donate -->
+                <!--
                 <li>
                     <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3J2L3Z4DHW9UY" target="_blank">
                         <i class="fa fa-paypal"></i> <span>Donate</span>
                     </a>
                 </li>
-                <?php if($auth){ ?>
+                -->
+                <!--<?php if($auth){ ?>-->
                 <!-- Help -->
-                <li<?php if($scriptname === "help.php"){ ?> class="active"<?php } ?>>
+                <!--<li<?php if($scriptname === "help.php"){ ?> class="active"<?php } ?>>
                     <a href="help.php">
                         <i class="fa fa-question-circle"></i> <span>Help</span>
                     </a>
                 </li>
                 <?php } ?>
+                -->
             </ul>
         </section>
         <!-- /.sidebar -->
